@@ -1,0 +1,18 @@
+.container {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(193, 192, 192, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}

@@ -1,0 +1,170 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftContainer {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer {
+  width: 400px;
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.logo {
+  width: 200px;
+  max-width: 200px;
+}
+
+.sideText {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(0, 97, 177);
+  margin: 0 12px;
+}
+
+.heading1 {
+  font-size: 38px;
+  width: 50%;
+  color: rgb(137, 48, 0);
+  margin: 0 0 24px 0;
+}
+
+.loginForm {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textLabel {
+  font-size: 18px;
+  color: gray;
+  margin: 24px 0 8px 0;
+  width: 60%;
+}
+
+.emailInput {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(0, 97, 177);
+  font-size: 16px;
+  color: gray;
+  padding: 8px 4px;
+  width: 60%;
+}
+.passwordInput {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(0, 97, 177);
+  font-size: 16px;
+  color: gray;
+  padding: 8px 4px;
+  width: 60%;
+}
+
+.newUserContainer {
+  display: flex;
+}
+
+.signUpButton2 {
+  cursor: pointer;
+  margin: 0 8px;
+  color: rgb(0, 97, 177);
+}
+
+.signUpButton2:hover {
+  border-bottom: 2px solid rgb(0, 97, 177);
+}
+
+.loginButton {
+  margin: 32px 0;
+  width: 60%;
+  outline: none;
+  border: none;
+  background-color: rgb(0, 97, 177);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: rgb(0, 70, 127);
+}
+
+.rightContainer {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.posterContainer {
+  width: 100%;
+  height: 100%;
+}
+.poster {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftContainer {
+    width: 90%;
+  }
+  .rightContainer {
+    width: 90%;
+  }
+  .heading1 {
+    width: 80%;
+  }
+
+  .logoContainer {
+    margin: 32px 0;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .sideText {
+    font-size: 20px;
+  }
+
+  .loginForm {
+    width: 95%;
+  }
+
+  .emailInput,
+  .passwordInput,
+  .textLabel,
+  .loginButton {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,82 @@
+.modalWrapper {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(193, 192, 192, 0.8);
+}
+
+.modalContainer {
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(71, 71, 71);
+  margin: 24px 0;
+}
+
+.skillInput,
+.educationInput {
+  padding: 12px 8px;
+  font-size: 16px;
+  width: 85%;
+  background-color: rgb(231, 231, 231);
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  color: gray;
+}
+
+.buttons {
+  display: flex;
+  margin: 24px 0;
+  width: 85%;
+  justify-content: flex-end;
+}
+
+.closeButton {
+  color: white;
+  background-color: rgb(255, 40, 40);
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 6px;
+  padding: 8px 16px;
+}
+.addButton {
+  color: white;
+  background-color: rgb(0, 162, 255);
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 6px;
+  padding: 8px 18px;
+}
+
+.closeButton:hover {
+  background-color: rgb(220, 34, 34);
+}
+.addButton:hover {
+  background-color: rgb(3, 143, 224);
+}
+
+@media (max-width: 600px) {
+  .modalContainer {
+    width: 95%;
+  }
+}

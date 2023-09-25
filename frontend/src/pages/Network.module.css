@@ -1,0 +1,56 @@
+.container {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  width: 80%;
+  margin: 24px 0;
+}
+
+.heading1 {
+  font-size: 28px;
+  margin: 24px 0;
+}
+
+.heading2 {
+  color: rgb(120, 119, 119);
+}
+
+.peopleContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.moreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  background-color: rgb(2, 94, 200);
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.buttonText:hover {
+  box-shadow: 0 0 10px 0 gray;
+}
+
+.loadingText {
+  width: 100%;
+  display: flex;
+  margin: 24px 0;
+  font-size: 20px;
+  justify-content: center;
+}

@@ -1,0 +1,94 @@
+.container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  object-fit: cover;
+  margin: 4px;
+}
+
+.info {
+  width: 70%;
+  height: 100%;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(66, 66, 66);
+}
+
+.lastMessage {
+  font-size: 16px;
+  color: gray;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+}
+
+.container:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+.skeletonContainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+
+.imageSkeleton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.infoSkeleton {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: 0 6px;
+}
+
+.nameSkeleton {
+  width: 150px;
+  border-radius: 8px;
+  margin: 4px 0;
+  height: 20px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.lastMessageSkeleton {
+  width: 100px;
+  border-radius: 6px;
+  height: 10px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(214, 3%, 54%);
+  }
+  100% {
+    background-color: hsl(214, 4%, 37%);
+  }
+}

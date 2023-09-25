@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  box-shadow: 0 0 10px 0 gray;
+  margin: 18px 0;
+}
+
+.image {
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  margin: 12px 0;
+}
+
+.likeCount {
+  width: 90%;
+  font-weight: 600;
+  color: gray;
+  font-size: 16px;
+}
+
+.caption {
+  font-size: 14px;
+  color: gray;
+  width: 90%;
+  margin: 14px 0;
+}
+
+.buttons {
+  width: 90%;
+}
+
+.downloadButton {
+  width: 100%;
+  font-size: 14px;
+  background-color: rgb(21, 204, 37);
+  color: white;
+  text-align: center;
+  margin: 6px 0 12px 0;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.deleteButton {
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: rgb(236, 22, 22);
+  text-align: center;
+  padding: 8px 0;
+  color: white;
+  margin: 6px 0;
+}
+
+.downloadButton:hover {
+  background-color: rgb(17, 157, 29);
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: rgb(190, 17, 17);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 400px;
+  }
+
+  .image,
+  .likeCount,
+  caption {
+    width: 95%;
+  }
+}
